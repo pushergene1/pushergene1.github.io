@@ -1,566 +1,103 @@
-<!DOCTYPE html>
-
-<html lang="en-US">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width" />
-<link rel="profile" href="//gmpg.org/xfn/11" />
-<link rel="pingback" href="http://demo.thinkupthemes.com/melos-free/xmlrpc.php" />
-<!--[if lt IE 9]>
-<script src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/html5.js" type="text/javascript"></script>
-<![endif]-->
-
-<title>ThinkUpThemes.com &#8211; Melos Theme Demo (Free Version) &#8211; Just another ThinkUpThemes.com &#8211; Demo Themes site</title>
-<link rel="alternate" type="application/rss+xml" title="ThinkUpThemes.com - Melos Theme Demo (Free Version) &raquo; Feed" href="https://demo.thinkupthemes.com/melos-free/feed/" />
-<link rel="alternate" type="application/rss+xml" title="ThinkUpThemes.com - Melos Theme Demo (Free Version) &raquo; Comments Feed" href="https://demo.thinkupthemes.com/melos-free/comments/feed/" />
-		<script type="text/javascript">
-			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/demo.thinkupthemes.com\/melos-free\/wp-includes\/js\/wp-emoji-release.min.js?ver=c145780995fa6599d5c19316dd5db9ee"}};
-			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
-		</script>
-		<style type="text/css">
-img.wp-smiley,
-img.emoji {
-	display: inline !important;
-	border: none !important;
-	box-shadow: none !important;
-	height: 1em !important;
-	width: 1em !important;
-	margin: 0 .07em !important;
-	vertical-align: -0.1em !important;
-	background: none !important;
-	padding: 0 !important;
-}
-</style>
-<link rel='stylesheet' id='thinkup-google-fonts-css'  href='//fonts.googleapis.com/css?family=Lato%3A300%2C400%2C600%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-<link rel='stylesheet' id='prettyPhoto-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/extentions/prettyPhoto/css/prettyPhoto.css?ver=3.1.6' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-bootstrap-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/extentions/bootstrap/css/bootstrap.min.css?ver=2.3.2' type='text/css' media='all' />
-<link rel='stylesheet' id='dashicons-css'  href='http://demo.thinkupthemes.com/melos-free/wp-includes/css/dashicons.min.css?ver=c145780995fa6599d5c19316dd5db9ee' type='text/css' media='all' />
-<link rel='stylesheet' id='font-awesome-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/extentions/font-awesome/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-shortcodes-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/styles/style-shortcodes.css?ver=1.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-style-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/style.css?ver=1.2.2' type='text/css' media='all' />
-<link rel='stylesheet' id='thinkup-responsive-css'  href='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/styles/style-responsive.css?ver=1.2.2' type='text/css' media='all' />
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-includes/js/jquery/jquery.js?ver=1.12.3'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.0'></script>
-<link rel='https://api.w.org/' href='https://demo.thinkupthemes.com/melos-free/wp-json/' />
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://demo.thinkupthemes.com/melos-free/xmlrpc.php?rsd" />
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://demo.thinkupthemes.com/melos-free/wp-includes/wlwmanifest.xml" /> 
-
-<script type="text/javascript">
-(function(url){
-	if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
-	var addEvent = function(evt, handler) {
-		if (window.addEventListener) {
-			document.addEventListener(evt, handler, false);
-		} else if (window.attachEvent) {
-			document.attachEvent('on' + evt, handler);
-		}
-	};
-	var removeEvent = function(evt, handler) {
-		if (window.removeEventListener) {
-			document.removeEventListener(evt, handler, false);
-		} else if (window.detachEvent) {
-			document.detachEvent('on' + evt, handler);
-		}
-	};
-	var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
-	var logHuman = function() {
-		var wfscr = document.createElement('script');
-		wfscr.type = 'text/javascript';
-		wfscr.async = true;
-		wfscr.src = url + '&r=' + Math.random();
-		(document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
-		for (var i = 0; i < evts.length; i++) {
-			removeEvent(evts[i], logHuman);
-		}
-	};
-	for (var i = 0; i < evts.length; i++) {
-		addEvent(evts[i], logHuman);
-	}
-})('//demo.thinkupthemes.com/melos-free/?wordfence_logHuman=1&hid=D96DA10FFC1BD8A74ED056545A77DA7E');
-</script>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
-		
-<style type="text/css">
-#slider .rslides, #slider .rslides li { height: 350px; max-height: 350px; }
-#slider .rslides img { height: 100%; max-height: 350px; }
-</style>
-
-</head>
-
-<body class="home blog layout-sidebar-none layout-responsive slider-full pre-header-style1 header-style1 blog-style1 blog-style1-layout1">
-<div id="body-core" class="hfeed site">
-
-	<header>
-	<div id="site-header">
-
-			
-		<div id="pre-header">
-		<div class="wrap-safari">
-		<div id="pre-header-core" class="main-navigation">
-  
-			<div id="pre-header-social"><ul><li class="social facebook"><a href="#" data-tip="bottom" data-original-title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li><li class="social twitter"><a href="#" data-tip="bottom" data-original-title="Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li><li class="social google-plus"><a href="#" data-tip="bottom" data-original-title="Google+" target="_blank"><i class="fa fa-google-plus"></i></a></li><li class="social linkedin"><a href="#" data-tip="bottom" data-original-title="LinkedIn" target="_blank"><i class="fa fa-linkedin"></i></a></li><li class="social flickr"><a href="#" data-tip="bottom" data-original-title="Flickr" target="_blank"><i class="fa fa-flickr"></i></a></li><li class="social youtube"><a href="#" data-tip="bottom" data-original-title="YouTube" target="_blank"><i class="fa fa-youtube"></i></a></li><li class="social rss"><a href="#" data-tip="bottom" data-original-title="RSS" target="_blank"><i class="fa fa-rss"></i></a></li></ul></div>
-			
-						<div id="pre-header-links-inner" class="header-links"><ul id="menu-testing-menu" class="menu"><li id="menu-item-1748" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1748"><a href="#">Pages</a>
-<ul class="sub-menu">
-	<li id="menu-item-1789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1789"><a href="https://demo.thinkupthemes.com/melos-free/about/page-image-alignment/">Page Image Alignment</a></li>
-	<li id="menu-item-1787" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1787"><a href="https://demo.thinkupthemes.com/melos-free/about/page-image-alignment/">Page Image Alignment</a></li>
-	<li id="menu-item-1790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1790"><a href="https://demo.thinkupthemes.com/melos-free/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
-	<li id="menu-item-1788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1788"><a href="https://demo.thinkupthemes.com/melos-free/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
-</ul>
-</li>
-<li id="menu-item-1046" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1046"><a href="#">Categories</a>
-<ul class="sub-menu">
-	<li id="menu-item-1047" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1047"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/">Markup</a></li>
-	<li id="menu-item-1048" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1048"><a href="https://demo.thinkupthemes.com/melos-free/category/unpublished/">Unpublished</a></li>
-</ul>
-</li>
-<li id="menu-item-1749" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1749"><a href="#">Depth</a>
-<ul class="sub-menu">
-	<li id="menu-item-1750" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1750"><a href="#">Level 01</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1751" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1751"><a href="#">Level 02</a>
-		<ul class="sub-menu">
-			<li id="menu-item-1752" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1752"><a href="#">Level 03</a>
-			<ul class="sub-menu">
-				<li id="menu-item-1753" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1753"><a href="#">Level 04</a>
-				<ul class="sub-menu">
-					<li id="menu-item-1754" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1754"><a href="#">Level 05</a>
-					<ul class="sub-menu">
-						<li id="menu-item-1755" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1755"><a href="#">Level 06</a>
-						<ul class="sub-menu">
-							<li id="menu-item-1756" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1756"><a href="#">Level 07</a>
-							<ul class="sub-menu">
-								<li id="menu-item-1757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1757"><a href="#">Level 08</a>
-								<ul class="sub-menu">
-									<li id="menu-item-1758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1758"><a href="#">Level 09</a>
-									<ul class="sub-menu">
-										<li id="menu-item-1759" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1759"><a href="#">Level 10</a></li>
-									</ul>
-</li>
-								</ul>
-</li>
-							</ul>
-</li>
-						</ul>
-</li>
-					</ul>
-</li>
-				</ul>
-</li>
-			</ul>
-</li>
-		</ul>
-</li>
-	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-1742" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1742"><a href="#">Advanced</a>
-<ul class="sub-menu">
-	<li id="menu-item-1743" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1743"><a title="Custom Title Attribute" href="#">Menu Title Attribute</a></li>
-	<li id="menu-item-1744" class="custom-menu-css-class menu-item menu-item-type-custom menu-item-object-custom menu-item-1744"><a href="#">Menu CSS Class</a></li>
-	<li id="menu-item-1745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1745"><a target="_blank" href="http://apple.com">New Window / Tab</a></li>
-</ul>
-</li>
-<li id="menu-item-1760" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1760"><a href="#">Menu Description</a></li>
-</ul></div>			
-		</div>
-		</div>
-		</div>
-		<!-- #pre-header -->
-
-				<div id="header">
-		<div id="header-core">
-
-			
-			<div id="logo">
-			<a rel="home" href="https://demo.thinkupthemes.com/melos-free/"><h1 rel="home" class="site-title" title="ThinkUpThemes.com &#8211; Melos Theme Demo (Free Version)">Melos Theme</h1></a>
-			</div>
-
-			
-			<div id="header-links" class="main-navigation">
-			<div id="header-links-inner" class="header-links">
-
-				<ul id="menu-all-pages" class="menu"><li id="menu-item-1747" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item"><a href="http://demo.thinkupthemes.com/melos-free"><span>Home</span></a></li>
-<li id="menu-item-1780" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/blog/"><span>Blog</span></a></li>
-<li id="menu-item-1781" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/front-page/"><span>Front Page</span></a></li>
-<li id="menu-item-1782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/about/"><span>About The Tests</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-1791" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-image-alignment/">Page Image Alignment</a></li>
-	<li id="menu-item-1792" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-markup-and-formatting/">Page Markup And Formatting</a></li>
-	<li id="menu-item-1783" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/clearing-floats/">Clearing Floats</a></li>
-	<li id="menu-item-1784" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-with-comments/">Page with comments</a></li>
-	<li id="menu-item-1762" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-with-comments-disabled/">Page with comments disabled</a></li>
-</ul>
-</li>
-<li id="menu-item-1771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-1/"><span>Level 1</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-2/">Level 2</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1773" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-3/">Level 3</a></li>
-	</ul>
-</li>
-</ul>
-</li>
-<li id="menu-item-1785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-1/"><span>Level 1</span></a>
-<ul class="sub-menu">
-	<li id="menu-item-1786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-2/">Level 2</a>
-	<ul class="sub-menu">
-		<li id="menu-item-1763" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-3/">Level 3</a></li>
-		<li id="menu-item-1793" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-2/level-3a/">Level 3a</a></li>
-		<li id="menu-item-1794" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-2/level-3b/">Level 3b</a></li>
-	</ul>
-</li>
-	<li id="menu-item-1795" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-1/level-2a/">Level 2a</a></li>
-	<li id="menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-1/level-2b/">Level 2b</a></li>
-</ul>
-</li>
-<li id="menu-item-1764" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/lorem-ipsum/"><span>Lorem Ipsum</span></a></li>
-<li id="menu-item-1797" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/page-a/"><span>Page A</span></a></li>
-</ul>				
-				
-			</div>
-			</div>
-			<!-- #header-links .main-navigation -->
- 	
-			<div id="header-nav"><a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a></div>
-		</div>
-		</div>
-		<!-- #header -->
-
-		<div id="header-responsive"><div id="header-responsive-inner" class="responsive-links nav-collapse collapse"><ul id="menu-all-pages-1" class=""><li id="res-menu-item-1747" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item"><a href="http://demo.thinkupthemes.com/melos-free"><span>Home</span></a></li>
-<li id="res-menu-item-1780" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/blog/"><span>Blog</span></a></li>
-<li id="res-menu-item-1781" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/front-page/"><span>Front Page</span></a></li>
-<li id="res-menu-item-1782" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/about/"><span>About The Tests</span></a>
-<ul class="sub-menu">
-	<li id="res-menu-item-1791" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-image-alignment/">&#45; Page Image Alignment</a></li>
-	<li id="res-menu-item-1792" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-markup-and-formatting/">&#45; Page Markup And Formatting</a></li>
-	<li id="res-menu-item-1783" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/clearing-floats/">&#45; Clearing Floats</a></li>
-	<li id="res-menu-item-1784" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-with-comments/">&#45; Page with comments</a></li>
-	<li id="res-menu-item-1762" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/about/page-with-comments-disabled/">&#45; Page with comments disabled</a></li>
-</ul>
-</li>
-<li id="res-menu-item-1771" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-1/"><span>Level 1</span></a>
-<ul class="sub-menu">
-	<li id="res-menu-item-1772" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-2/">&#45; Level 2</a>
-	<ul class="sub-menu">
-		<li id="res-menu-item-1773" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-3/">&#45; &#45; Level 3</a></li>
-	</ul>
-</li>
-</ul>
-</li>
-<li id="res-menu-item-1785" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-1/"><span>Level 1</span></a>
-<ul class="sub-menu">
-	<li id="res-menu-item-1786" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children"><a href="https://demo.thinkupthemes.com/melos-free/level-2/">&#45; Level 2</a>
-	<ul class="sub-menu">
-		<li id="res-menu-item-1763" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-3/">&#45; &#45; Level 3</a></li>
-		<li id="res-menu-item-1793" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-2/level-3a/">&#45; &#45; Level 3a</a></li>
-		<li id="res-menu-item-1794" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-2/level-3b/">&#45; &#45; Level 3b</a></li>
-	</ul>
-</li>
-	<li id="res-menu-item-1795" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-1/level-2a/">&#45; Level 2a</a></li>
-	<li id="res-menu-item-1796" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/level-1/level-2b/">&#45; Level 2b</a></li>
-</ul>
-</li>
-<li id="res-menu-item-1764" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/lorem-ipsum/"><span>Lorem Ipsum</span></a></li>
-<li id="res-menu-item-1797" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="https://demo.thinkupthemes.com/melos-free/page-a/"><span>Page A</span></a></li>
-</ul></div></div>
-		<div id="slider" class="style1"><div id="slider-core"><div class="rslides-container" data-speed="off"><div class="rslides-inner"><ul class="slides"><li><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/transparent.png" style="background: url(http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/slide_demo1.png) no-repeat center; background-size: cover;" alt="Demo Image" /></li><li><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/transparent.png" style="background: url(http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/slide_demo2.png) no-repeat center; background-size: cover;" alt="Demo Image" /></li><li><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/transparent.png" style="background: url(http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/slide_demo3.png) no-repeat center; background-size: cover;" alt="Demo Image" /></li></ul></div></div></div></div>
-		
-		
-		
-		
-	</div>
-
-
-	</header>
-	<!-- header -->
-
-		<div id="section-home"><div id="section-home-inner"><article class="section1 one_third"><div class="services-builder style1"><div class="iconimage"><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/placeholder_image.png" alt="Placeholder Image" /></div><div class="iconmain"><h3>Perfect For All</h3><p>Melos makes it the perfect choice for any website. Blog, Business, charity, well everything! You can now do it all through the beauty of Melos!</p>
-<p class="iconurl"><a class="themebutton" href="https://demo.thinkupthemes.com/melos-free/sample-page/">Read More</a></p></div></div></article><article class="section2 one_third"><div class="services-builder style1"><div class="iconimage"><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/placeholder_image.png" alt="Placeholder Image" /></div><div class="iconmain"><h3>100% Responsive</h3><p>Melos is 100% responsive. It looks great on all devices, from mobiles to desktops! Switch on the responsive layout from the theme options panel.</p>
-<p class="iconurl"><a class="themebutton" href="https://demo.thinkupthemes.com/melos-free/sample-page/">Read More</a></p></div></div></article><article class="section3 one_third last"><div class="services-builder style1"><div class="iconimage"><img src="http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/images/slideshow/placeholder_image.png" alt="Placeholder Image" /></div><div class="iconmain"><h3>Powerful Framework</h3><p>Get a taste of our awesome ThinkUpThemes Framework. Make changes without touching code! Take control and build your perfect website fast!</p>
-<p class="iconurl"><a class="themebutton" href="https://demo.thinkupthemes.com/melos-free/sample-page/">Read More</a></p></div></div></article><div class="clearboth"></div></div></div>
-	<div id="content">
-	<div id="content-core">
-
-		<div id="main">
-		<div id="main-core">
-			
-				<div id="container">
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1241" class="blog-article post-1241 post type-post status-publish format-standard sticky hentry category-uncategorized tag-sticky-2 tag-template format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2012/01/07/template-sticky/" title="Permalink to Template: Sticky">Template: Sticky</a></h2>							<div class="entry-meta"><span class="sticky"><a href="https://demo.thinkupthemes.com/melos-free/2012/01/07/template-sticky/" title="Template: Sticky">Sticky</a></span><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2012/01/07/template-sticky/" title="Template: Sticky"><time datetime="2012-01-07T07:07:21+00:00"><span class="date-month">January 7, 2012</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/sticky-2/" rel="tag">sticky</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/template/" rel="tag">template</a></span></div>							<p>This is a sticky post. There are a few things to verify: The sticky post should be distinctlyÂ recognizableÂ in some way in comparison to normal posts. You can style the .sticky class if you are using the post_class() function to generate your post classes, which is a best practice. They should show at the
-<p class="more-link"><a href="https://demo.thinkupthemes.com/melos-free/2012/01/07/template-sticky/" class="themebutton">Read More</a></p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1" class="blog-article post-1 post type-post status-publish format-standard hentry category-uncategorized format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2015/06/30/hello-world/" title="Permalink to Hello world!">Hello world!</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2015/06/30/hello-world/" title="Hello world!"><time datetime="2015-06-30T18:48:15+00:00"><span class="date-month">June 30, 2015</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="comment"><a href="https://demo.thinkupthemes.com/melos-free/2015/06/30/hello-world/#comments"><span class="comment-count">1</span> <span class="comment-text">Comment</span></a></span></div>							<p>Welcome to ThinkUpThemes.com &#8211; Demo Themes. This is your first post. Edit or delete it, then start blogging!</p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1178" class="blog-article post-1178 post type-post status-publish format-standard hentry category-markup tag-content-2 tag-css tag-formatting-2 tag-html tag-markup-2 format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/11/markup-html-tags-and-formatting/" title="Permalink to Markup: HTML Tags and Formatting">Markup: HTML Tags and Formatting</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/11/markup-html-tags-and-formatting/" title="Markup: HTML Tags and Formatting"><time datetime="2013-01-11T20:22:19+00:00"><span class="date-month">January 11, 2013</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/" rel="category tag">Markup</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/content-2/" rel="tag">content</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/css/" rel="tag">css</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/formatting-2/" rel="tag">formatting</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/html/" rel="tag">html</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/markup-2/" rel="tag">markup</a></span></div>							<p>Headings Header one Header two Header three Header four Header five Header six Blockquotes Single line blockquote: Stay hungry. Stay foolish. Multi line blockquote with a cite reference: People think focus means saying yes to the thing you&#8217;ve got to focus on. But that&#8217;s not what it means at all. It means saying no to
-<p class="more-link"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/11/markup-html-tags-and-formatting/" class="themebutton">Read More</a></p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1177" class="blog-article post-1177 post type-post status-publish format-standard has-post-thumbnail hentry category-markup tag-alignment-2 tag-captions-2 tag-content-2 tag-css tag-image tag-markup-2">
-
-						<header class="entry-header two_fifth">
-
-							<div class="blog-thumb"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/10/markup-image-alignment/"><img width="570" height="456" src="https://demo.thinkupthemes.com/melos-free/files/2013/03/soworthloving-wallpaper-570x456.jpg" class="attachment-column2-4/5 size-column2-4/5 wp-post-image" alt="I Am Worth Loving Wallpaper" /></a></div>
-						</header>
-
-						<div class="entry-content three_fifth last">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/10/markup-image-alignment/" title="Permalink to Markup: Image Alignment">Markup: Image Alignment</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/10/markup-image-alignment/" title="Markup: Image Alignment"><time datetime="2013-01-10T20:15:40+00:00"><span class="date-month">January 10, 2013</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/" rel="category tag">Markup</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/alignment-2/" rel="tag">alignment</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/captions-2/" rel="tag">captions</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/content-2/" rel="tag">content</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/css/" rel="tag">css</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/image/" rel="tag">image</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/markup-2/" rel="tag">markup</a></span></div>							<p>Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let&#8217;s get started. On the topic of alignment, it should be noted that users can choose from the options ofÂ None,Â Left,Â
-<p class="more-link"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/10/markup-image-alignment/" class="themebutton">Read More</a></p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1176" class="blog-article post-1176 post type-post status-publish format-standard hentry category-markup tag-alignment-2 tag-content-2 tag-css tag-markup-2 format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/09/markup-text-alignment/" title="Permalink to Markup: Text Alignment">Markup: Text Alignment</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/09/markup-text-alignment/" title="Markup: Text Alignment"><time datetime="2013-01-09T09:00:39+00:00"><span class="date-month">January 9, 2013</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/" rel="category tag">Markup</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/alignment-2/" rel="tag">alignment</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/content-2/" rel="tag">content</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/css/" rel="tag">css</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/markup-2/" rel="tag">markup</a></span></div>							<p>Default This is a paragraph. It should not have any alignment of any kind. It should just flow like you would normally expect. Nothing fancy. Just straight up text, free flowing, with love. Completely neutral and not picking a side or sitting on the fence. It just is. It just freaking is. It likes where
-<p class="more-link"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/09/markup-text-alignment/" class="themebutton">Read More</a></p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1174" class="blog-article post-1174 post type-post status-publish format-standard hentry category-markup tag-html tag-markup-2 tag-post tag-title format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/05/title-with-special-characters/" title="Permalink to Markup: Title With Special Characters">Markup: Title With Special Characters</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/05/title-with-special-characters/" title="Markup: Title With Special Characters"><time datetime="2013-01-05T11:00:20+00:00"><span class="date-month">January 5, 2013</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/" rel="category tag">Markup</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/html/" rel="tag">html</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/markup-2/" rel="tag">markup</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/post/" rel="tag">post</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/title/" rel="tag">title</a></span></div>							<p>Putting special characters in the title should have no adverse effect on the layout or functionality. Special characters in the post title have been known to cause issues with JavaScript when it is minified, especially in the admin when editing the post itself (ie. issues with metaboxes, media upload, etc.). Latin Character Tests This is
-<p class="more-link"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/05/title-with-special-characters/" class="themebutton">Read More</a></p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1173" class="blog-article post-1173 post type-post status-publish format-standard hentry category-markup tag-css tag-html tag-title format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/05/markup-title-with-markup/" title="Permalink to Markup: Title With Markup">Markup: Title With Markup</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2013/01/05/markup-title-with-markup/" title="Markup: Title With Markup"><time datetime="2013-01-05T10:00:49+00:00"><span class="date-month">January 5, 2013</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/markup/" rel="category tag">Markup</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/css/" rel="tag">css</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/html/" rel="tag">html</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/title/" rel="tag">title</a></span></div>							<p>Verify that: The post title renders the word &#8220;with&#8221; in italics and the word &#8220;markup&#8221; in bold. The post title markup should be removed from the browser window / tab.</p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1016" class="blog-article post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-
-						<header class="entry-header two_fifth">
-
-							<div class="blog-thumb"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-vertical/"><img width="300" height="456" src="https://demo.thinkupthemes.com/melos-free/files/2013/03/featured-image-vertical-300x456.jpg" class="attachment-column2-4/5 size-column2-4/5 wp-post-image" alt="Horizontal Featured Image" /></a></div>
-						</header>
-
-						<div class="entry-content three_fifth last">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-vertical/" title="Permalink to Template: Featured Image (Vertical)">Template: Featured Image (Vertical)</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-vertical/" title="Template: Featured Image (Vertical)"><time datetime="2012-03-15T15:36:32+00:00"><span class="date-month">March 15, 2012</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/template-2/" rel="category tag">Template</a>, <a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/codex/" rel="tag">Codex</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/edge-case/" rel="tag">edge case</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/featured-image/" rel="tag">featured image</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/image/" rel="tag">image</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/template/" rel="tag">template</a></span></div>							<p>This post should display aÂ featured image, if the themeÂ supports it. Non-square images can provide some unique styling issues. This post tests a vertical featured image.</p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-1011" class="blog-article post-1011 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
-
-						<header class="entry-header two_fifth">
-
-							<div class="blog-thumb"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-horizontal/"><img width="570" height="300" src="https://demo.thinkupthemes.com/melos-free/files/2013/03/featured-image-horizontal-570x300.jpg" class="attachment-column2-4/5 size-column2-4/5 wp-post-image" alt="Horizontal Featured Image" /></a></div>
-						</header>
-
-						<div class="entry-content three_fifth last">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-horizontal/" title="Permalink to Template: Featured Image (Horizontal)">Template: Featured Image (Horizontal)</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-featured-image-horizontal/" title="Template: Featured Image (Horizontal)"><time datetime="2012-03-15T15:15:12+00:00"><span class="date-month">March 15, 2012</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/template-2/" rel="category tag">Template</a>, <a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/codex/" rel="tag">Codex</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/edge-case/" rel="tag">edge case</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/featured-image/" rel="tag">featured image</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/image/" rel="tag">image</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/template/" rel="tag">template</a></span></div>							<p>This post should display a featured image, if the theme supports it. Non-square images can provide some unique styling issues. This post tests a horizontal featured image.</p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-996" class="blog-article post-996 post type-post status-publish format-standard hentry category-template-2 category-uncategorized tag-content-2 tag-read-more tag-template format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-more-tag/" title="Permalink to Template: More Tag">Template: More Tag</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-more-tag/" title="Template: More Tag"><time datetime="2012-03-15T14:41:11+00:00"><span class="date-month">March 15, 2012</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/template-2/" rel="category tag">Template</a>, <a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/content-2/" rel="tag">content</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/read-more/" rel="tag">read more</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/template/" rel="tag">template</a></span></div>							
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-					<div class="blog-grid element column-1">
-
-					<article id="post-993" class="blog-article post-993 post type-post status-publish format-standard hentry category-template-2 category-uncategorized tag-content-2 tag-excerpt-2 tag-template format-nomedia">
-
-						<header class="entry-header">
-
-							
-						</header>
-
-						<div class="entry-content">
-
-							<h2 class="blog-title"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-excerpt-defined/" title="Permalink to Template: Excerpt (Defined)">Template: Excerpt (Defined)</a></h2>							<div class="entry-meta"><span class="date"><a href="https://demo.thinkupthemes.com/melos-free/2012/03/15/template-excerpt-defined/" title="Template: Excerpt (Defined)"><time datetime="2012-03-15T14:38:08+00:00"><span class="date-month">March 15, 2012</span></time></a></span><span class="author"><a href="https://demo.thinkupthemes.com/melos-free/author/demoadmin/" title="View all posts by demoadmin" rel="author">demoadmin</a></span><span class="category"><a href="https://demo.thinkupthemes.com/melos-free/category/template-2/" rel="category tag">Template</a>, <a href="https://demo.thinkupthemes.com/melos-free/category/uncategorized/" rel="category tag">Uncategorized</a></span><span class="tags"><a href="https://demo.thinkupthemes.com/melos-free/tag/content-2/" rel="tag">content</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/excerpt-2/" rel="tag">excerpt</a>, <a href="https://demo.thinkupthemes.com/melos-free/tag/template/" rel="tag">template</a></span></div>							<p>This is a user-defined post excerpt. It should be displayed in place of the post content in archive-index pages.</p>
-
-						</div><div class="clearboth"></div>
-
-					</article><!-- #post- -->
-
-					</div>
-
-				
-				</div><div class="clearboth"></div>
-
-				<ul class="pag pag-start"><li class="current"><span>1</span></li><li><a href="https://demo.thinkupthemes.com/melos-free/page/2/">2</a></li><li><a href="https://demo.thinkupthemes.com/melos-free/page/3/">3</a></li><li class="pag-next"><a href="https://demo.thinkupthemes.com/melos-free/page/2/"><i class="fa fa-angle-right"></i></a></li><li class="pag-last" ><a href="https://demo.thinkupthemes.com/melos-free/page/4/"><i class="fa fa-angle-double-right"></i></a></li></ul>
-			
-
-		</div><!-- #main-core -->
-		</div><!-- #main -->
-			</div>
-	</div><!-- #content -->
-
-	<footer>
-		<!-- #footer -->		
-		<div id="sub-footer">
-		<div id="sub-footer-core">
-		
-			<div class="copyright">
-			Developed by <a href="//www.thinkupthemes.com/" target="_blank">Think Up Themes Ltd</a>. Powered by <a href="//www.wordpress.org/" target="_blank">Wordpress</a>.			</div>
-			<!-- .copyright -->
-
-						<!-- #footer-menu -->
-
-									
-		</div>
-		</div>
-	</footer><!-- footer -->
-
-</div><!-- #body-core -->
-
-<script>
-/* Disable demo links */
-jQuery(window).load(function(){
-jQuery('a[href^="http://www.thinkupthemes.com"]').attr( 'target', '_blank' );
-jQuery('a[href^="http://www.wordpress.org"]').attr( 'target', '_blank' );
-
-jQuery('#section-home .iconurl a' ).attr( 'href', '#' );
-
-jQuery('a[href="#"]').attr( 'onclick', 'return false;' );
-});
-</script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/extentions/prettyPhoto/js/jquery.prettyPhoto.js?ver=3.1.6'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/modernizr.js?ver=2.6.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/plugins/scrollup/jquery.scrollUp.min.js?ver=2.4.1'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/extentions/bootstrap/js/bootstrap.js?ver=2.3.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/main-frontend.js?ver=1.2.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-includes/js/masonry.min.js?ver=3.1.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/plugins/ResponsiveSlides/responsiveslides.min.js?ver=1.54'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-content/themes/melos/lib/scripts/plugins/ResponsiveSlides/responsiveslides-call.js?ver=1.2.2'></script>
-<script type='text/javascript' src='http://demo.thinkupthemes.com/melos-free/wp-includes/js/wp-embed.min.js?ver=c145780995fa6599d5c19316dd5db9ee'></script>
-
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Jumbotron Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Hello, world!</h1>
+          <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+          <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+          <div class="col-md-4">
+            <h2>Heading</h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          </div>
+        </div>
+
+        <hr>
+
+      </div> <!-- /container -->
+
+    </main>
+
+    <footer class="container">
+      <p>&copy; Company 2017-2018</p>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="../../assets/js/vendor/popper.min.js"></script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
